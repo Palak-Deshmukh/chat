@@ -37,7 +37,7 @@ app.get('/:room', (req, res) => {
   res.render('room', { roomName: req.params.room })
 })
 
-server.listen(4000)
+server.listen(process.env.PORT||4000)
 
 //it makes connection to socket
 io.on('connection', socket => {
