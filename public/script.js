@@ -1,4 +1,4 @@
-const socket = io('http://localhost:4000')  //import socket.io
+const socket = io('/')  //import socket.io
 
 const messageContainer = document.getElementById('message-container')
 const roomContainer = document.getElementById('room-container')
