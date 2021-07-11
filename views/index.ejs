@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VidMeet Chat</title>
+  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="container">
+    <form action="/room" method="POST">
+      <input name="room" type="text" placeholder="Enter your room name" required>
+      <button class="btn" type="submit">New Room</button>
+    </form>
+    <div id="room-container">
+      <% Object.keys(rooms).forEach(room => { %>
+        <div class="join-rooms"><%= room %>  <span><a href="/<%= room %>">Join</a></span></div>
+        
+      <% }) %>
+    </div>
+  </div>
+  
+</body>
+</html>

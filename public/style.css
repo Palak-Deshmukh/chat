@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --main_color:#ffffff;
+    --font1:'Roboto', sans-serif;
+    --theme_color:rgb(83, 16, 190);
+}
+*{
+    
+    font-family: var(--font1);
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(145, 154, 163));
+}
+  #message-container {
+       
+    
+    max-width: 955px;
+    border :2px solid var(--theme_color);
+    border-radius: 3px;
+    padding: 33px;
+    margin: auto;
+    height: 70vh;
+    overflow-y: auto ;
+    margin-bottom: 23px;
+
+
+  }
+  .message{
+    
+    /* width: 24%; */
+    max-width: 48%;
+    overflow-x:auto;
+    /* grid-template-rows:subgrid; */
+    
+    margin: 1px 12px;
+    border:1px solid black;
+    border-radius: 10px;
+  
+}
+p{
+    padding: 5px;
+    
+}
+#send-container{
+    display: block;
+    margin:auto;
+    text-align: center;
+    max-width: 1050px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    position: relative;
+   
+}
+input{
+    border:none;
+    
+    background-color:transparent;
+    
+}
+button{
+background: var(--theme_color) ;
+border: medium none;
+border-radius: 5px;
+color: #fff;
+cursor: pointer;
+font-size: 17px;
+height: 40px;
+width: 40px;
+border-radius: 50%;
+position: relative;
+right: 4;
+
+
+}
+
+.left{
+    float: left;
+    clear: both;
+    background-color: var(--main_color);
+    color:var(--theme_color);
+    
+
+}
+.right{
+    float: right;
+    clear: both;
+    background-color: var(--theme_color);
+    color:var(--main_color);
+}
+
+  /* #message-container div {
+    background-color: #CCC;
+    padding: 5px;
+  }
+
+  #message-container div:nth-child(2n) {
+    background-color: #FFF;
+  } */
+
+ 
+
+  #message-input {
+    flex-grow: 1;
+  }

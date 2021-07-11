@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --main_color:#ffffff;
+    --font1:'Roboto', sans-serif;
+    --theme_color:rgb(83, 16, 190);
+}
+*{
+    
+    font-family: var(--font1);
+}
+.container{
+    margin: auto;
+    margin-top: 4em;
+    height: 40vh;
+    max-height:80vh;
+    width:20em;
+    background-color:rgb(204, 193, 193);
+    padding-top: 2em;
+}
+
+.btn{
+    height:2em;
+    width:100px;
+    background-color: var(--theme_color);
+    color: var(--main_color);
+    border: none;
+}
+input{
+    margin-left: 2em;
+    height: 2em;
+}
+
+.join-rooms{
+    height: 2em;
+    width: 90%;
+    margin:auto;
+    margin-top: 1em;
+    padding-left:0.5em ;
+    padding-right: 0.5em;
+    
+    background-color: var(--main_color);
+}
+span{
+    float: right;
+}
+a{
+    padding-left: 2em;
+    color: var(--theme_color);
+}

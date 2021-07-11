@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VidMeet Chat</title>
+  <script>
+    const roomName = "<%= roomName %>"
+  </script>
+  <script defer src="/socket.io/socket.io.js"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div id="message-container">
+    
+  </div>
+  <form id="send-container">
+    <input type="text" id="message-input" placeholder="Type your message here....">
+    <button type="submit" id="send-button" ><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+  </form>
+</body>
+</html>
